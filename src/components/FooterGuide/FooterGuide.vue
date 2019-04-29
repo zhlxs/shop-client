@@ -8,7 +8,7 @@
     </a>
     <a href="javascript:;" class="guide_item" :class="{on:'/search'===$route.path}" @click="goTo('/search')">
       <span class="item_icon">
-        <i class="iconfont icon-search"></i>
+        <i class="iconfont icon-sousuo"></i>
       </span>
       <span>搜索</span>
     </a>
