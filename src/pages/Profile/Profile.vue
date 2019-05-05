@@ -7,23 +7,23 @@
     </header>-->
     <HeaderTop address="个人中心"/>
     <section class="profile-number">
-      <a href="javascript:" class="profile-link">
+      <router-link to="/login" class="profile-link">
         <div class="profile_image">
           <i class="iconfont icontouxiang"></i>
         </div>
         <div class="user-info">
           <p class="user-info-top">登录/注册</p>
           <p>
-                <span class="user-icon">
-                  <i class="iconfont iconshouji iconshouji1"></i>
-                </span>
+            <span class="user-icon">
+              <i class="iconfont iconshouji iconshouji1"></i>
+            </span>
             <span class="icon-mobile-number">暂无绑定手机号</span>
           </p>
         </div>
         <span class="arrow">
-              <i class="iconfont iconjiantou"></i>
-            </span>
-      </a>
+          <i class="iconfont iconjiantou"></i>
+        </span>
+      </router-link>
     </section>
     <section class="profile_info_data border-1px">
       <ul class="info_data_list">
@@ -108,6 +108,7 @@
   @import "../../common/stylus/mixins.styl"
   .profile //我的
     width 100%
+    overflow hidden
 
     .header //头部
       background-color #02a774

@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home.vue'
 import Order from '../pages/Order/Order.vue'
 import Profile from '../pages/Profile/Profile.vue'
 import Search from '../pages/Search/Search.vue'
+import Login from '../pages/Login/Login.vue'
 
 Vue.use(Router)
 
@@ -20,28 +21,44 @@ export default new Router({
     {
       path: '/home',
       //name: 'HelloWorld',
-      component: Home
+      component: Home,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/order',
       //name: 'HelloWorld',
-      component: Order
+      component: Order,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/profile',
       //name: 'HelloWorld',
-      component: Profile
+      component: Profile,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/search',
       //name: 'HelloWorld',
-      component: Search
+      component: Search,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/',
       //name: 'HelloWorld',
       //component: HelloWorld
       redirect: '/home'
+    },
+    {
+      path: '/login',
+      component: Login
     }
   ]
 })
